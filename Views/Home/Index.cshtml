@@ -9,6 +9,14 @@
 
     @Html.TextBoxFor(s=>s.Email)
     @Html.ValidationMessageFor(s=>s.Email,"",new {@class="text-primary"})
+
+    @Html.TextBoxFor(s=>s.Age)
+
+    <br>
+
+    @Html.TextBoxFor(s=>s.Password)
+
+    @Html.TextBoxFor(s=>s.ConfirmPassword)
     <input type="submit" value="Gönder">
 </form>
 

@@ -28,3 +28,4 @@
 /Users/emrahelis/Validation_MVC/obj/Debug/net8.0/Validation_MVC.pdb
 /Users/emrahelis/Validation_MVC/obj/Debug/net8.0/Validation_MVC.genruntimeconfig.cache
 /Users/emrahelis/Validation_MVC/obj/Debug/net8.0/ref/Validation_MVC.dll
+/Users/emrahelis/Validation_MVC/obj/Debug/net8.0/Validation_MVC.sourcelink.json
