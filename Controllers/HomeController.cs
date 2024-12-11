@@ -12,7 +12,16 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
+    [HttpGet]
+    public IActionResult GetValidationMessage(string desc){
 
+        if(desc.Length<10){
+
+            return Json("karakter uzunluğu minimum 10 karakter olmalıdır!");
+
+        }
+        return Json(true);
+    }
     public IActionResult Index()
     {
         return View();

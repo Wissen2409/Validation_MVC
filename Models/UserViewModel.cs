@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 
 public class UserViewModel
 {
@@ -24,4 +25,12 @@ public class UserViewModel
 
     [Compare("Password", ErrorMessage = "Girilen değerler aynı değil")]
     public string ConfirmPassword { get; set; }
+
+
+
+    // Validasyon mesajını, bir actiondan getirmek için yöntem
+    // çalışmadı yarın bakılacak!!
+
+    [Remote("GetValidationMessage","Home" ,ErrorMessage ="Karakter uzunluğu az girilmiş")]
+    public string Description{ get; set; }
 }
