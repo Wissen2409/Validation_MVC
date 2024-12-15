@@ -1,10 +1,14 @@
 ﻿@model UserViewModel
 
 <form method="post" action="/Home/Index">
+
+    @*TÜM validasyon mesajlarını görebilmek için, ValidationSummary kullanılabilr*@
     @Html.ValidationSummary()
 
 
     @Html.TextBoxFor(s => s.Name)
+
+    @*Bir Field için gelen validasyon mesajlarını ValidationMessageFor yöntemi ile görebilirsiniz*@
     @Html.ValidationMessageFor(s=>s.Name,"", new {@class="text-danger"})
 
     @Html.TextBoxFor(s=>s.Email)

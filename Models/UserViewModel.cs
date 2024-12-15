@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 
 public class UserViewModel
 {
+    // Ödev : Fluent Validation örneğ inceleyip, uygulamanızda kullanınız!!
+
+    
 
     // Required name alanın boş girilmemesini sağlayacaktır
     [MinLength(3, ErrorMessage = "Ad alanı minimum 3 karakterli olmalıdır!")]
